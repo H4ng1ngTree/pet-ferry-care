@@ -1,0 +1,27 @@
+# assets 图片说明
+
+这里放页面需要的图片、图表、地图、词云和采访照片。
+
+当前页面已经使用了这些图片：
+
+| 位置 | 内容 | 文件名 |
+| --- | --- | --- |
+| 01 | 宠物规模、离世规模、殡葬渗透率对比 | chart-01-demand-gap.svg |
+| 02 | 问卷核心发现 | chart-02-survey-findings.svg |
+| 03 | 入行动机词云 | chart-03-motivation-wordcloud.svg |
+| 04 | 相关企业地区分布地图 | company-region-map.jpg |
+| 04补充 | 所属地区分布占比 | company-region-share.jpg |
+| 05 | 行业问题分类 | chart-05-industry-problems.svg |
+| 06 | 火化率提升趋势 | cremation-rate-trend.jpg |
+| 07 | 服务项目选择偏好 | service-choice-items.jpg |
+| 08 | 政策监管时间线 | chart-08-policy-timeline.svg |
+| 09 | 日本 / 美国 / 中国成熟度对比 | chart-09-country-comparison.svg |
+| 10 | 政策建议与治理路径信息图 | chart-10-governance-path.svg |
+
+首屏背景图建议使用：
+
+```text
+hero-placeholder.jpg
+```
+
+如果没有首屏图片，页面会自动显示暖色渐变背景。
