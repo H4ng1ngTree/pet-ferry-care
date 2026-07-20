@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" rx="28" fill="#fffaf0"/>
+<text x="70" y="78" font-size="38" font-weight="800" fill="#2d241f" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>从宠物规模到体面告别：需求缺口在哪里</text>
+<text x="70" y="118" font-size="18" fill="#695b51" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>当宠物被纳入家庭情感关系，最后一程也成为可量化的城市服务需求。</text>
+<g transform="translate(80,175)">
+  <rect x="0" y="0" width="1040" height="110" rx="20" fill="#ead4b8"/>
+  <text x="38" y="46" font-size="25" fill="#683a2a" font-weight="800" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>潜在生命基数</text>
+  <text x="780" y="60" text-anchor="end" font-size="54" fill="#9b5c3d" font-weight="900" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>1.26亿只</text>
+  <text x="820" y="60" font-size="22" fill="#695b51" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>2025年城镇犬猫数量</text>
+  <path d="M520 110 L570 150 L470 150 Z" fill="#d8b88f"/>
+  <rect x="80" y="150" width="880" height="110" rx="20" fill="#f1e3d0"/>
+  <text x="118" y="196" font-size="25" fill="#683a2a" font-weight="800" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>年度离世规模</text>
+  <text x="660" y="210" text-anchor="end" font-size="50" fill="#9b5c3d" font-weight="900" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>800万只+</text>
+  <text x="700" y="210" font-size="22" fill="#695b51" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>按寿命推算的保守估计</text>
+  <path d="M520 260 L570 300 L470 300 Z" fill="#d8b88f"/>
+  <rect x="230" y="300" width="580" height="110" rx="20" fill="#fff1dc"/>
+  <text x="268" y="346" font-size="25" fill="#683a2a" font-weight="800" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>实际体面告别</text>
+  <text x="585" y="360" text-anchor="end" font-size="52" fill="#9b5c3d" font-weight="900" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>&lt;4%</text>
+  <text x="625" y="360" font-size="22" fill="#695b51" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>宠物殡葬渗透率</text>
+</g>
+<text x="70" y="662" font-size="17" fill="#8a7667" style='font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;'>数据来源：生命教育计量.csv、可直接引用量化数据.csv；“800万只+”为按犬猫寿命推算的保守估计。</text>
+</svg>

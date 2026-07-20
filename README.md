@@ -1,110 +1,27 @@
-# 毛孩子的“摆渡人”
-
-这是一个可直接部署到 GitHub Pages 的静态数据新闻页面模板。
-
-## 文件结构
-
-```text
-pet-ferry-github-page/
-├── index.html          # 页面正文
-├── style.css           # 页面样式
-├── assets/             # 图片、图表、封面图占位目录
-├── data/               # CSV/Excel/JSON 等数据文件占位目录
-└── README.md           # 部署说明
-```
-
-## 本地预览
-
-最简单的方法：双击 `index.html`。
-
-如果想用本地服务器预览，在该目录下运行：
-
-```bash
-python -m http.server 8000
-```
-
-然后打开：
-
-```text
-http://localhost:8000
-```
-
-## 替换图片和图表
-
-页面现在使用的是“占位卡”。后续拿到正式图片或图表后，有两种替换方式。
-
-方式一：继续用占位卡，只改文字。
-
-```html
-<div class="visual-slot">
-  <div>
-    <b>图表占位 01</b>
-    <span>核心矛盾：宠物规模、离世规模与殡葬渗透率</span>
-  </div>
-</div>
-```
-
-方式二：替换成真实图片。
-
-```html
-<figure class="figure">
-  <img src="./assets/你的图表文件名.png" alt="图表说明">
-  <figcaption>数据来源：写清楚来源和统计口径。</figcaption>
-</figure>
-```
-
-建议图片命名：
-
-```text
-assets/
-├── hero-placeholder.jpg
-├── chart-01-demand-gap.png
-├── chart-02-survey-findings.png
-├── chart-03-worker-profile.png
-├── chart-04-company-growth.png
-├── chart-05-industry-problems.png
-├── chart-06-public-service.png
-├── chart-07-policy-timeline.png
-├── chart-08-country-comparison.png
-└── chart-09-governance-path.png
-```
-
-## 部署到 GitHub Pages
-
-1. 新建一个 GitHub 仓库，比如 `pet-ferry-news`。
-2. 把本文件夹里的 `index.html`、`style.css`、`assets/`、`data/`、`README.md` 上传到仓库根目录。
-3. 进入仓库页面，点击 `Settings`。
-4. 左侧找到 `Pages`。
-5. 在 `Build and deployment` 里：
-   - `Source` 选择 `Deploy from a branch`
-   - `Branch` 选择 `main`
-   - 文件夹选择 `/root`
-6. 保存后等待 1-3 分钟。
-7. GitHub 会生成访问链接，一般格式是：
-
-```text
-https://你的用户名.github.io/pet-ferry-news/
-```
-
-## 用 Git 命令上传
-
-如果你本地已经安装 Git，可以这样操作：
-
-```bash
-git init
-git add .
-git commit -m "add pet ferry data news page"
-git branch -M main
-git remote add origin https://github.com/你的用户名/pet-ferry-news.git
-git push -u origin main
-```
-
-推送完成后，按上面的 GitHub Pages 步骤开启页面即可。
-
-## 参赛前检查清单
-
-- 所有图表都写明数据来源和口径。
-- 问卷样本量、样本结构、局限性写清楚。
-- 图片文件名不要用空格，尽量使用英文或拼音。
-- 浏览器打开页面，检查手机端和电脑端都不溢出。
-- GitHub Pages 链接能正常访问。
+﻿source_id,机构,日期,标题,类型,地区,覆盖议题,关键数据,url,可信度,备注
+S001,新华社,2025-06-12,关注宠物经济丨每年数百万只宠物死亡，“身后事”怎么办？,媒体调查/权威通讯社,中国,市场规模、价格、乱象、机构案例、监管建议,2023年18.25亿元；2025年预计50亿元；2030年预计超100亿元；重庆机构服务500多只，高峰月约80单；部分报价300—3000元,https://www.news.cn/politics/20250612/9c509c65a8424e318ba83af4c05074a9/c.html,高,预测值需注明非官方统计
+S002,新华社,2024-03-19,需求明显增长，规模不断扩大——宠物消费市场调查,媒体调查/权威通讯社,中国,宠物数量、企业数量、行业兴起,2023年犬5175万只、猫6980万只；经营范围含宠物殡葬企业4965家，其中4407家成立不足5年,https://www.news.cn/fortune/20240319/112e0d58dbdb467ebfff8e3db140797b/c.html,高,经营范围不等于实际开展业务
+S003,上海市农业农村委员会,2022-07-08,对市十五届人大六次会议第0698号代表建议的答复,政府答复,上海,公共处理体系、历史服务数量、机构协作,截至2021年底累计集体火化宠物24万余只、单独火化2万余只；与200余家宠物诊疗机构合作；中心日处理能力60吨,https://nyncw.sh.gov.cn/jyta/rddbjy/20220708/14c75399b4234825a5b339457873cb8e.html,很高,官方服务量核心数据
+S004,上海市农业农村委员会,现行页面,上海市动物无害化处理中心,政府机构介绍,上海,设施、人员、处理能力,人员编制40人；本部占地39428.7平方米、建筑面积17568.8平方米、日处理60吨；崇明分部日处理15吨,https://nyncw.sh.gov.cn/zssydw/20180705/0009-6467.html,很高,机构现状页可能更新
+S005,昆山市农业农村局,2025-07-01,昆山市病死宠物无害化处理服务指南,政府服务指南,昆山,免费公共服务、收集点、流程,首批5家病死犬猫无害化收集暂存点；面向本市常住居民免费；填写登记表和委托书,https://www.ks.gov.cn/kss/bmdt/202507/ab8ca2cd65dd49f19f44fa29e5c7d1d5.shtml,很高,公共兜底模式
+S006,山东省畜牧兽医局,2024-08-22,关于省政协十三届二次会议第13020668号委员提案答复,政府答复,山东,无害化处理网络覆盖,专业无害化处理厂70家、暂存点541个，实现行政区域全覆盖，可为宠物提供服务,https://xm.shandong.gov.cn/art/2024/8/22/art_123031_32728.html?xxgkhide=1,很高,体系主要面向畜禽，宠物可接入
+S007,上海市城管执法局,2024-10-28,宠物很可爱，但犬只尸体不能随意丢弃！,执法案例,上海,地方处罚、规范处置,乱扔犬只尸体个人罚20—200元，单位罚5000—50000元,https://cgzf.sh.gov.cn/channel_yasf/20241028/20e02e86ed7b4701abe04afeedf59f8b.html,很高,地方条例执行案例
+S008,上海市农业农村委员会,2024-06-17,死亡犬只应该怎样处理？,政府问答,上海,处置规则,犬只死亡应送指定无害化处理场所，不得自行掩埋或乱扔,https://nyncw.sh.gov.cn/bwbdcwl/20240617/6f4d2957b0834691aed7903ad0b8c242.html,很高,政策倡议信息图依据
+S009,福州市晋安区政府/检察机关材料,2021-06-21,规范宠物医疗废弃物处置风险提示,政府/检察调查,福州,宠物医院暂存与第三方处理乱象,第三方处理每只400—2000元；存在移动火化、缺乏专门场地、冷藏暂存不规范,https://www.fjjn.gov.cn/ztzl/xyxxztzl/202106/t20210621_1676213.htm,高,地区性调查
+S010,苏州市人民政府,2024-07-03,关于加强病死畜禽无害化处理工作的实施意见,行政规范性文件,苏州,区域中心、跨县转运、宠物参照执行,提出区域性处理中心、跨县域收集转运；病死犬猫宠物可参照执行,https://www.suzhou.gov.cn/szsrmzf/szfgfxwjk/202407/1c51c9f0b31b4805a664cfc7f93dbab4/files/8ef617eab357463b9cc2f8347095a290.pdf,很高,已附PDF
+S011,广州市生态环境局,2025,宠物无害化处置中心项目环境影响报告表公示稿,环评文件,广州,设施建设、环保合规、选址,专门宠物处理设施选址、工艺、污染防治和法规符合性说明,https://sthjj.gz.gov.cn/attachment/7/7919/7919888/10216161.pdf,很高,已附PDF
+S012,日本环境省,2010,業種追加の検討「動物の死体火葬・埋葬業者」について,中央政策讨论PDF,日本,行业登记、移动火化、从业要求,讨论将动物遗体火葬/埋葬经营者纳入监管的必要性、法律路径和遵守义务,https://www.env.go.jp/council/content/i_10/900435347.pdf,很高,已附PDF
+S013,日本环境省,历史通达,動物霊園事業に係る廃棄物の定義等について,中央政府通达,日本,动物灵园业务、火化设施,接收、火化、墓地埋葬和供养流程；示例场地8952平方米、2台火化炉、炉温800℃,https://www.env.go.jp/hourei/11/000296.html,很高,日本成熟度实证
+S014,日本环境省,2010-11-29,中央環境審議会動物愛護部会小委員会会议记录,政府会议记录,日本,监管讨论历史,讨论动物遗体火葬埋葬业是否增加为受监管业种,https://www.env.go.jp/council/14animal/y143-08a.html,很高,反映制度演进
+S015,RSPCA,近年调查,What our survey data tells us about pet grief,动物福利组织调查,英国,宠物丧失、悲伤、生命教育,67%对悲伤强度震惊；93%心碎或深度悲伤；60%内疚；55%孤独；约半数出现抑郁或焦虑症状,https://www.rspca.org.uk/adviceandwelfare/pets/bereavement/survey,高,用于生命教育和哀伤支持
+S016,Testoni等,2019,Pet Grief: Tools to Assess Owners' Bereavement,同行评议论文,国际,宠物丧失量表与样本,样本中死亡宠物61%犬、35%猫、4%其他；可参考量表设计,https://pmc.ncbi.nlm.nih.gov/articles/PMC6406392/,很高,不可直接外推中国
+S017,百度指数,现行平台,百度指数,官方数据平台,中国,搜索趋势,可查询宠物殡葬、宠物火化、宠物善终等；通常需登录后手工导出,https://index.baidu.com/,很高,未伪造指数数值
+S018,巨潮资讯,现行平台,上市公司信息披露平台,法定披露平台,中国,上市公司关注度,可检索年报、半年报和投资者关系记录中的相关关键词,https://www.cninfo.com.cn/,很高,需逐份全文检索
+S019,American Pet Products Association,行业统计页,Industry Trends & Stats,美国行业协会,美国,宠物产业规模、家庭渗透,美国宠物产业底盘来源；宠物殡葬通常未单列,https://americanpetproducts.org/industry-trends-and-stats,高,协会口径
+S020,Grand View Research,2026版,"Pet Funeral Services Market Size, Share Report",商业研究机构,全球,全球宠物殡葬市场预测,2025年17亿美元；2026年19亿美元；2033年36亿美元；CAGR 9.6%,https://www.grandviewresearch.com/industry-analysis/pet-funeral-services-market-report,中,商业报告
+N001,央视网/2026中国宠物行业白皮书,2026-01-05,《2026年中国宠物行业白皮书》正式发布：市场规模迈过3100亿大关,白皮书发布报道,中国,宠物消费大盘、犬猫数量、年均消费、服务占比,2025年城镇犬猫消费市场3126亿元，预计2028年4050亿元；2025年城镇犬猫数量1.26亿只；犬5343万只，猫7289万只；服务市场份额6.5%,https://business.cctv.com/2026/01/05/ARTIdmv2AWmVeRVodaZYLOvQ260105.shtml,很高,用于说明宠物殡葬需求的宠物经济底盘，不等于殡葬市场规模
+N002,IBISWorld,2026页面/2024数据,Pet Cremation Services in the US - Market Size,商业市场研究,美国,美国宠物火化市场规模,2024年美国宠物火化服务市场规模13亿美元；2024年增长1.3%；2019-2024年CAGR 12.5%,https://www.ibisworld.com/united-states/market-size/pet-cremation-services/6364/,中高,商业研究页，适合国际成熟度对比
+N003,IBISWorld,2026页面/2024数据,Pet Funeral & Cremation Services in the US - Employment,商业市场研究,美国,美国从业人数与企业规模,2024年美国宠物殡葬与火化服务从业3324人；平均每家企业8.1人,https://www.ibisworld.com/united-states/employment/pet-funeral-cremation-services/6528/,中高,用于说明成熟市场仍以小型服务主体为主
+N004,澎湃新闻,2026-04-21,专访｜王英豪：宠物殡葬本质上是情感服务，门槛低天花板高,人物访谈,中国,从业者画像、入行动机、情感劳动,从家具设计师转行，从学徒到开店，坚持5年左右；宠物殡葬被定位为情感服务,https://www.thepaper.cn/newsDetail_forward_33011901,高,人物样本，不可外推全国画像
+N005,新京报,2026-04-22,一位宠物殡葬师眼中的生死离别,人物口述,中国,死亡教育、宠物丧失、从业感受,王英豪从业第六年，记录宠物主人告别故事，讨论死亡与分离,https://m.bjnews.com.cn/detail/1776825546168623.html,高,适合写生命教育与个体故事
+N006,扬子晚报/紫牛新闻,2026-04-04,4.7万家企业撑起宠物“身后事”，宠物殡葬师讲述他遇到的特殊告别,媒体报道,中国,企业数量、从业者故事,企查查称截至2026年3月底现存4.7万家宠物殡葬相关企业；华北28.3%、华东25.9%；2025年注册8534家,https://www.yzwb.net/news/sh/202604/t20260404_338863.html,中高,相关企业口径大于经营范围含宠物殡葬服务口径

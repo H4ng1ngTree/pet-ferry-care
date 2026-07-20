@@ -1,0 +1,9 @@
+﻿series_type,platform,keyword_or_query,metric_to_collect,start_date,end_date,frequency,public_status,how_to_get,merge_key,suggested_visual,source_or_entry,source_grade,notes
+baidu_index,百度指数,宠物殡葬,search_index,2021-01-01,2026-07-19,daily/monthly,needs_login_or_manual_export,登录百度指数后导出或截图核验,date,折线图叠加政策事件,https://index.baidu.com/baidu-index-mobile/index.html,A,不要虚构日度数值；可用截图做证据
+baidu_index,百度指数,宠物火化,search_index,2021-01-01,2026-07-19,daily/monthly,needs_login_or_manual_export,登录百度指数后导出或截图核验,date,折线图叠加媒体曝光,https://index.baidu.com/baidu-index-mobile/index.html,A,与宠物殡葬对比可识别服务具体化趋势
+baidu_index,百度指数,宠物善终,search_index,2021-01-01,2026-07-19,daily/monthly,needs_login_or_manual_export,登录百度指数后导出或截图核验,date,折线图叠加从业者访谈,https://index.baidu.com/baidu-index-mobile/index.html,A,更偏情感叙事关键词
+baidu_index,百度指数,动物无害化处理,search_index,2021-01-01,2026-07-19,daily/monthly,needs_login_or_manual_export,登录百度指数后导出或截图核验,date,与监管事件叠加,https://index.baidu.com/baidu-index-mobile/index.html,A,更偏政策/公共卫生关键词
+listed_company_attention,深交所互动易,宠物殡葬 OR 宠物火化 OR 宠物善终,question_count,2021-01-01,2026-07-19,monthly,public_search_but_may_need_manual,在互动易搜索关键词，按提问日期和公司去重,date/company,热度柱状图,https://irm.cninfo.com.cn/,A,记录公司代码、问题文本、答复文本、日期
+listed_company_attention,上证e互动,宠物殡葬 OR 宠物火化 OR 宠物善终,question_count,2021-01-01,2026-07-19,monthly,public_search_but_may_need_manual,在上证e互动搜索关键词，按提问日期和公司去重,date/company,热度柱状图,https://sns.sseinfo.com/,A,若没有直接命中，可扩展到宠物经济/宠物服务
+listed_company_attention,东方财富/公告检索,宠物殡葬 OR 动物无害化处理 OR 宠物服务,mention_count,2021-01-01,2026-07-19,monthly,public_search,搜索公告/研报/股吧文本，区分公告与投资者讨论,date/source_type,堆叠面积图,https://www.eastmoney.com/,B,股吧只能代表投资者讨论，不代表公司业务
+listed_company_attention,Tushare接口,irm_qa_sh / 互动问答文本数据,qa_text_count,2023-06-01,2026-07-19,daily/monthly,api_requires_permission,若团队有Tushare权限，可按关键词批量拉取,date/company,可自动化趋势图,https://tushare.pro/document/2?doc_id=366,B,接口描述公开，但数据权限需确认
